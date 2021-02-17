@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="description" content="API Practice Page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Matthew Wiberg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Practice</title>
+    <link rel="stylesheet" type="text/css" href="Styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      <main>
+
+        <section class="container weather-input">
+          <h1>Check Your Weather</h1>
+          <form class="container">
+            <label for="city" class="form-item"><strong>City:</strong></label>
+            <input id="city" class="form-item" type="text" placeholder="City to search for...">
+            <button id="submitBtn" class="form-item">Submit</button>
+          </form>
+        </section>
+
+        <section class="weather-display">
+
+          <div class="container current-day-display">
+            <h2>Today's Forecast</h2>
+            <h3 id="current-day-weather-city"></h3>
+            <div class="container current-day-weather"></div>
+          </div>
+
+          <div class="container five-day-display">
+            <h2>Five Day Forecast</h2>
+            <div class="five-day-weather"></div>
+          </div>
+
+        </section>
+
+      </main>
+
+      <script src="js/main.js"></script>
+  </body>
+</html>
