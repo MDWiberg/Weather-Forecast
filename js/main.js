@@ -100,6 +100,9 @@ const renderCurrentDayForecast = (jsonResponse) => {
       break;
   }
 
+  // Clear any existing padding from previous search on div container html goes into
+  currentWeatherDiv.style.padding = "0"
+
   // Clear current days forecast for new search to take its place
   currentWeatherDiv.innerHTML = "";
   
